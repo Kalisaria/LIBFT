@@ -1,39 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmeyer <dmeyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/07 01:12:35 by dmeyer            #+#    #+#             */
-/*   Updated: 2026/10/09 17:29:11 by dmeyer           ###   ########.fr       */
+/*   Created: 2026/10/09 12:02:30 by dmeyer            #+#    #+#             */
+/*   Updated: 2026/10/09 13:32:45 by dmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static char	*ft_strncpy(char *dest, char *src, size_t n)
+int	ft_tolower(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	if (c >= 'A' || c <= 'Z')
+		c += 32;
+	return (c);
 }
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	ft_strncpy((char *)dest, (char *)src, n);
-	return (dest);
-}
-/*
-#include <stdio.h>
-int main()
-{
-	char 
-}*/
