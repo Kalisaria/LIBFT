@@ -6,7 +6,7 @@
 /*   By: dmeyer <dmeyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 13:36:19 by dmeyer            #+#    #+#             */
-/*   Updated: 2026/10/09 16:47:08 by dmeyer           ###   ########.fr       */
+/*   Updated: 2026/10/15 10:13:16 by dmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,18 @@ char	*ft_strrchr(const char *s, int c)
 int main()
 {
 	const	char s[] = "hola que tal";
-
+	printf("*****************************************\n");
 	printf("Original c = i: %s || y s queda : %s\n" , strrchr(s,'i'),s);
 	printf("FT c = i      : %s || y s queda : %s\n", ft_strrchr(s,'i'),s);
+	printf("*****************************************\n");
 	printf("Original c = h: %s || y s queda : %s\n", strrchr(s,'h'),s);
 	printf("Ft c = h      : %s || y s queda : %s\n", ft_strrchr(s,'h'),s);
+	printf("*****************************************\n");
 	printf("Original c = l: %s || y s queda : %s\n", strrchr(s,'l'),s);
 	printf("Ft c = l      : %s || y s queda : %s\n" , ft_strrchr(s,'l'),s);
+	printf("*****************************************\n");
 	printf("Original c = q: %s || y s queda : %s\n", strrchr(s,'q'),s);
 	printf("Ft c = q      : %s || y s queda : %s\n" , ft_strrchr(s,'q'),s);
+	printf("*****************************************\n");
 }
 */
